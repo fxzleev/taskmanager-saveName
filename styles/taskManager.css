@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	&:focus-visible {
+		outline: solid 2px #a7c8ff;
+	}
+}
+
+body {
+	background: #323c4d;
+}
+
+.completed span {
+	text-decoration: line-through;
+	color: #a7c8ff;
+}
+header {
+	background: #323c4d;
+	min-width: 100%;
+	min-height: 80px;
+	box-shadow: 0 0 5px 0 rgb(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	& a {
+		color: white;
+		text-decoration: none;
+		margin: 0 20px;
+		padding: 10px 20px;
+		background: #404856;
+		border-radius: 20px;
+		font-size: 20px;
+		transition: all 0.5s;
+		&:hover {
+			background: white;
+			color: black;
+		}
+	}
+}
+
+main {
+	min-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	& h1 {
+		margin: 15px 0;
+		color: white;
+		text-align: center;
+	}
+	& .filters {
+		display: flex;
+		justify-content: center;
+		margin: 15px 0;
+		& button {
+			margin: 0 15px;
+			background: #404856;
+			padding: 10px 20px;
+			border-radius: 20px;
+			outline: none;
+			border: none;
+			color: white;
+			transition: all 0.5s;
+			&:hover {
+				background: white;
+				color: black;
+				cursor: pointer;
+			}
+			&:focus-visible {
+				outline: solid 2px #a7c8ff;
+			}
+		}
+	}
+	& .createTask {
+		display: flex;
+		justify-content: center;
+		& input {
+			width: 300px;
+			outline: none;
+			border: none;
+			margin: 0 15px;
+			padding: 0 15px;
+			border-radius: 20px;
+			background: #404856;
+			color: white;
+			&:focus-visible {
+				border: solid 2px #a7c8ff;
+			}
+			&::placeholder {
+				color: rgb(255, 255, 255, 0.5);
+			}
+		}
+		& button {
+			background: #404856;
+			padding: 10px 20px;
+			border-radius: 20px;
+			width: 100px;
+			border: none;
+			outline: none;
+			color: white;
+			transition: all 0.5s;
+			&:hover {
+				background: white;
+				color: black;
+				cursor: pointer;
+			}
+			&:focus-visible {
+				outline: solid 2px #a7c8ff;
+			}
+		}
+	}
+	& ul {
+		padding: 0 20px;
+		& li {
+			display: grid;
+			grid-template-columns: 1fr 10fr 1fr;
+			justify-content: center;
+			margin: 20px 0;
+			& span {
+				max-width: 1000px;
+				text-align: center;
+				color: white;
+				font-size: 20px;
+			}
+			& input {
+				width: 23px;
+			}
+			& button {
+				width: 100px;
+				background: #404856;
+				padding: 10px 20px;
+				border-radius: 20px;
+				border: none;
+				outline: none;
+				color: white;
+				transition: all 0.5s;
+				&:hover {
+					background: white;
+					color: black;
+					cursor: pointer;
+				}
+				&:focus-visible {
+					outline: solid 2px #a7c8ff;
+				}
+			}
+		}
+	}
+}

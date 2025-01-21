@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NameManager</title>
+		<link rel="stylesheet" href="../styles/nameManager.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="../index.html">TaskManager</a>
+			</nav>
+		</header>
+		<main>
+			<h1>Введите ваше имя</h1>
+
+			<div class="createName">
+				<input type="text" id="name-input" placeholder="Ваше имя" />
+				<button onclick="saveName()">Сохранить</button>
+			</div>
+
+			<h2 id="saved-name">Гость</h2>
+		</main>
+
+		<script src="../scripts/nameManager.js"></script>
+	</body>
+</html>
